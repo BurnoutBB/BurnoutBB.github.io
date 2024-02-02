@@ -43,6 +43,8 @@ body{
     background-color: rgb(238, 238, 113);
 }
 #notes{
+    
+    
     font-size: 40px;
     color: white;
     font-family: "OCR A";
@@ -52,7 +54,11 @@ body{
     margin-left: 5%;
     margin-right: 5%;
     height: auto;
+   
 
+}
+p{
+    transition-duration: 0.2s;
 }
 #html:hover,#css:hover,#js:hover,#sql:hover,#acc:hover,#php:hover{
     box-shadow: 5px 5px 5px 5px white;
@@ -113,4 +119,10 @@ body{
     background-color: #808080;
     border-radius: 10px;
     position: absolute;
+}
+.highlight {
+    background-color: purple;
+    transition-duration: 0.2s;
+    border-radius: 10px;
+    
 }

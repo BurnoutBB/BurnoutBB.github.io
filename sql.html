@@ -6,24 +6,36 @@
     <link rel="stylesheet" href="styl.css">
     <link rel="stylesheet" media="screen and (max-device-width: 690px)" href="styl2.css" />
     <title>Małpy sie uczą</title>
+    <script src="spis.js"></script>
+    <script src="przewijanie.js"></script>
+ 
 </head>
 <body>
 
     
+    <!-- OPCJE DO WYBORU -->
     <div id="menu">
+
+
         <a href="index.html">
             <div id="html">
                 HTML
             </div>
         </a>
     
+    
+        <a>
             <div id="css">
                 CSS
             </div>
+        </a>
     
+    
+        <a>
             <div id="js">
                 JS
             </div>
+        </a>
             
         <a href="sql.html">
             <div id="sql">
@@ -31,14 +43,38 @@
             </div>
         </a>
     
+    
+        <a>
             <div id="acc">
                  ACC
             </div>
+        </a>
     
+    
+        <a>
             <div id="php">
                 PHP
             </div>
-        
+        </a>
+    
+    
+    
+            <!--SPIS TREŚCI -->
+            <div id="spis" class="spis">
+                <div class="tytul" onclick="toggleSpis()">SPIS TRESCI</div>
+                <div class="tresc" id="trescSpisu">
+                    <a href="#section1"> <p> CREATE </p></a>
+                    <p> DROP </p>
+                    <p> Wale konia stopami całymi dniami joł joł </p>
+                    <p> Wale konia stopami całymi dniami joł joł </p>
+                    <p> Wale konia stopami całymi dniami joł joł </p>
+                    <p> Wale konia stopami całymi dniami joł joł </p>
+                </div>
+            </div>
+    
+    
+    
+    
     
         </div>
 
@@ -48,7 +84,7 @@
         <p style="font-size: 90px; line-height: 0px; text-align: center; color: rgb(255, 125, 125);" >DISCLAIMER</p>
         <p>Wszystkie notatki tutaj sa niezbyt profesjonalne i kompletne poniewaz zawieraja tylko to co czego uczymy sie w szkole :) </p><br><br>
         <p>Utworzenie bazy danych</p>
-        <p style="color: rgb(184, 106, 184);"> create DATABASE </p><br><br>
+        <p style="color: rgb(184, 106, 184);" id="create"> create DATABASE </p><br><br>
 
 
         <p>Usuwanie bazy danych</p>
@@ -79,7 +115,7 @@
         <p>Aby dodac kolumne w konkretnym miejscu nalezy uzyc AFTER</p>
         <p style="color: rgb(184, 106, 184);">ALTER TABLE nazwa_tabeli ADD nazwa_kolumny typ_danych AFTER nazwa_innej_kolumny</p><br><br>
 
-        <p>Usuwanie kolumn:</p>
+        <p id="section1">Usuwanie kolumn:</p>
         <p style="color: rgb(184, 106, 184);">ALTER TABLE nazwa_tabeli DROP nazwa_kolumny</p><br><br>
 
         <p>Zmiana typu danych w kolumnie:</p>
