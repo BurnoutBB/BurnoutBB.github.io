@@ -52,9 +52,10 @@ body{
     margin-left: 5%;
     margin-right: 5%;
     height: auto;
-    background-color: rgb(32, 32, 32);
+
 }
 #html:hover,#css:hover,#js:hover,#sql:hover,#acc:hover,#php:hover{
+    box-shadow: 5px 5px 5px 5px white;
     
     
 }
@@ -75,4 +76,41 @@ body{
     }
     
 
+}
+#spis{
+    
+    text-align: center;
+    float: right;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    background-color: #808080;
+    margin-right: 0.83%;
+    width: 15%;
+    height: 50px;
+    color: white;
+    border-radius: 10px;
+    font-size: 50px;
+    font-family: "OCR A";
+    z-index: 1000;
+    position: relative;
+    cursor: pointer;
+    a{
+        color: white;
+    }
+    a:visited{
+        color: white;
+    }
+    
+    
+    
+}
+.tresc {
+    
+    width: 100%;
+    margin-top: 2%;
+    transition-duration: 0.2s;
+    display: none;
+    background-color: #808080;
+    border-radius: 10px;
+    position: absolute;
 }
