@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styl.css">
+    <link rel="stylesheet" media="screen and (max-device-width: 546px)" href="styl2.css" />
+    <title>Małpy sie uczą</title>
+</head>
+<body>
+
+    
+    <div id="menu">
+        <a href="html.html">
+            <div id="html">
+                HTML
+            </div>
+        </a>
+    
+            <div id="css">
+                CSS
+            </div>
+    
+            <div id="js">
+                JS
+            </div>
+            
+        <a href="sql.html">
+            <div id="sql">
+                SQL
+            </div>
+        </a>
+    
+            <div id="acc">
+                 ACC
+            </div>
+    
+            <div id="php">
+                PHP
+            </div>
+        
+    
+        </div>
+
+
+
+    <div id="notes">
+        <p style="font-size: 90px; line-height: 0px; text-align: center; color: rgb(255, 125, 125);" >DISCLAIMER</p>
+        <p>Wszystkie notatki tutaj sa niezbyt profesjonalne i kompletne poniewaz zawieraja tylko to co czego uczymy sie w szkole :) </p><br><br>
+        <p>Utworzenie bazy danych</p>
+        <p style="color: rgb(184, 106, 184);"> create DATABASE </p><br><br>
+
+
+        <p>Usuwanie bazy danych</p>
+        <p style="color: rgb(184, 106, 184);">DROP DATABASE nazwa_bazy</p><br><br>
+
+
+        <p>Dodanie tabeli do bazy danych</p>
+        <p style="color: rgb(184, 106, 184);">CREATE TABLE nazwa_tabeli(nazwa_kolumny typ_danych DODATKOWE_ARGUMENTY)</p>
+
+
+        <p>Podstawowe typy danych:</p>
+
+
+        <p>Dodatkowe argumenty np:</p>
+        <p style="color: rgb(184, 106, 184);">&nbsp;&nbsp;AUTO INCREMENT</p>
+        <p style="color: rgb(184, 106, 184);">&nbsp;&nbsp;PRIMARY KEY</p>
+        <p style="color: rgb(184, 106, 184);">&nbsp;&nbsp;FOREGIN KEY</p><br><br>
+
+
+        <p>Dodawanie danych do tabeli:</p>
+        <p style="color: rgb(184, 106, 184);">INSERT into nazwa_nazwa tabeli VALUES(wartosci, oddzielone, przecinkami)</p>
+        <p> W przypadku wpisywania danych tekstowych musimy uzyc cudzysłowow lub apostrofow</p>
+        <p style="color: rgb(184, 106, 184);">INSERT into nazwa_tabeli VALUES("Wartosci","tekstowe")</p>
+        <p>W przypadku liczby zmiennoprzecinkowej warto pamietac aby uzyc kropki a nie przecinka </p><br><br>
+
+        <p>Dodawanie kolumn do tabeli:</p>
+        <p style="color: rgb(184, 106, 184);">ALTER TABLE nazwa_tabeli ADD(nazwa_kolumny typ_danych)</p>
+        <p>Aby dodac kolumne w konkretnym miejscu nalezy uzyc AFTER</p>
+        <p style="color: rgb(184, 106, 184);">ALTER TABLE nazwa_tabeli ADD nazwa_kolumny typ_danych AFTER nazwa_innej_kolumny</p><br><br>
+
+        <p>Usuwanie kolumn:</p>
+        <p style="color: rgb(184, 106, 184);">ALTER TABLE nazwa_tabeli DROP nazwa_kolumny</p><br><br>
+
+        <p>Zmiana typu danych w kolumnie:</p>
+        <p style="color: rgb(184, 106, 184);">ALTER TABLE nazwa_tabeli MODIFY nazwa_kolumny typ_danych</p><br><br>
+
+        <p>Zmiana nazwy kolumny:</p>
+        <p style="color: rgb(184, 106, 184);">ALTER TABLE nazwa_tabeli CHANGE stara_nazwa nowa_nazwa typ_danych</p><br><br>
+
+        <p>Zmiana nazwy tabeli:</p>
+        <p style="color: rgb(184, 106, 184);">ALTER TABLE nazwa_tabeli RENAME nowa_nazwa</p><br><br>
+
+        <p>Wyszukiwanie danych w tabeli: </p>
+        <p style="color: rgb(184, 106, 184);">SELECT szukana_wartosc FROM `nazwa_tabeli` WHERE inna_wartosc=1</p>
+        <p>Dla przykladu wyszukanie emaila uzytkownika o ID=1 z tabeli uzytkownicy:</p>
+        <p style="color: rgb(184, 106, 184);">SELECT email FROM `uzytkownicy` where user_id=1</p>
+        <p>Warto pamietac ze nie uzywamy tutaj ani cudzyslowiu ani apostrofu a GRAWISU `</p><br><br>
+
+
+
+
+
+
+
+
+        
+
+
+    </div>
+
+
+    <div id="fwc">
+        By BurnoutBB<br>
+        <a href="https://www.facebook.com/kacper.topro" target="_blank"><img src="fb.png" height="100px"></a>
+        <a href="https://www.instagram.com/burnout_bb/" target="_blank"><img src="ig.png" height="100px"></a>
+        <a href="https://github.com/BurnoutBB" target="_blank"><img src="github.png" height="100px"></a>
+    </div>
+</body>
+</html>

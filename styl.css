@@ -1,0 +1,78 @@
+
+body{
+    zoom: 50%;
+    background-color:rgb(32, 32, 32);
+}
+#menu{
+    width: 100%;
+   
+   
+}
+
+#html,#css,#js,#sql,#acc,#php{
+    transition-duration: 0.2s ;
+    text-align: center;
+    height: 100px;
+    font-family: "OCR A";
+    color: white;
+    background-color: #f2672e;
+    float: left;
+    width: 15%;
+    margin-left: 0.83%;
+    margin-right: 0.83%;
+    border-radius: 5px;
+    
+    font-size: 90px;
+}
+#html{
+    background-color:#f2672e
+}
+#css{
+    background-color: #30aadd
+}
+#js{
+    background-color: #5bbe74
+}
+#sql{
+    background-color: rgb(167, 81, 167);
+}
+#acc{
+    background-color: rgb(238, 104, 104);
+}
+#php{
+    background-color: rgb(238, 238, 113);
+}
+#notes{
+    font-size: 40px;
+    color: white;
+    font-family: "OCR A";
+    margin-top: 5%;
+    float: left;
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+    height: auto;
+    background-color: rgb(32, 32, 32);
+}
+#html:hover,#css:hover,#js:hover,#sql:hover,#acc:hover,#php:hover{
+    
+    
+}
+#fwc{
+    padding-top: 10px;
+    font-size: 60px;
+    color: #262626;
+    font-family: "OCR A";
+    text-align: center;
+    float: left;
+    width: 100%;
+    height: 200px;
+    background-color: rgb(20, 20, 20);
+    img{
+        margin-top: 10px;
+        margin-right: 20px;
+        margin-left: 20px;
+    }
+    
+
+}
