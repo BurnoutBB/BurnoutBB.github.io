@@ -63,9 +63,9 @@
             <div id="spis" class="spis">
                 <div class="tytul" onclick="toggleSpis()">SPIS TRESCI</div>
                 <div class="tresc" id="trescSpisu">
-                    <a href="#section1"> <p> CREATE </p></a>
-                    <p> DROP </p>
-                    <p> Wale konia stopami całymi dniami joł joł </p>
+                    <a href="#section1" onclick="scrollToSection('section1'); hideSpis()">CREATE</a><br> 
+                    <a href="#section2" onclick="scrollToSection('section2'); hideSpis()">DROP</a><br>
+                    <a href="#section3" onclick="scrollToSection('section3'); hideSpis()">CREATE TABLE</a><br>
                     <p> Wale konia stopami całymi dniami joł joł </p>
                     <p> Wale konia stopami całymi dniami joł joł </p>
                     <p> Wale konia stopami całymi dniami joł joł </p>
@@ -83,15 +83,15 @@
     <div id="notes">
         <p style="font-size: 90px; line-height: 0px; text-align: center; color: rgb(255, 125, 125);" >DISCLAIMER</p>
         <p>Wszystkie notatki tutaj sa niezbyt profesjonalne i kompletne poniewaz zawieraja tylko to co czego uczymy sie w szkole :) </p><br><br>
-        <p>Utworzenie bazy danych</p>
+        <p id="section1">Utworzenie bazy danych</p>
         <p style="color: rgb(184, 106, 184);" id="create"> create DATABASE </p><br><br>
 
 
-        <p>Usuwanie bazy danych</p>
+        <p id="section2">Usuwanie bazy danych</p>
         <p style="color: rgb(184, 106, 184);">DROP DATABASE nazwa_bazy</p><br><br>
 
 
-        <p>Dodanie tabeli do bazy danych</p>
+        <p id="section3">Dodanie tabeli do bazy danych</p>
         <p style="color: rgb(184, 106, 184);">CREATE TABLE nazwa_tabeli(nazwa_kolumny typ_danych DODATKOWE_ARGUMENTY)</p>
 
 
@@ -115,7 +115,7 @@
         <p>Aby dodac kolumne w konkretnym miejscu nalezy uzyc AFTER</p>
         <p style="color: rgb(184, 106, 184);">ALTER TABLE nazwa_tabeli ADD nazwa_kolumny typ_danych AFTER nazwa_innej_kolumny</p><br><br>
 
-        <p id="section1">Usuwanie kolumn:</p>
+        <p >Usuwanie kolumn:</p>
         <p style="color: rgb(184, 106, 184);">ALTER TABLE nazwa_tabeli DROP nazwa_kolumny</p><br><br>
 
         <p>Zmiana typu danych w kolumnie:</p>
