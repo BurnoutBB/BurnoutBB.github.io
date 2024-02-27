@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styl.css">
+    <link rel="stylesheet" media="screen and (max-device-width: 1115px)" href="spisfix.css" />
+    <link rel="stylesheet" media="screen and (max-device-width: 690px)" href="styl2.css" />
+    
+    <title>Może zdamy xddd</title>
+    <script src="spis.js"></script>
+    <script src="przewijanie_js.js"></script>
+ 
+</head>
+<body>
+
+    
+    <!-- OPCJE DO WYBORU -->
+    <div id="menu">
+
+
+        <a href="index.html">
+            <div id="html">
+                HTML
+            </div>
+        </a>
+    
+    
+        <a>
+            <div id="css">
+                CSS
+            </div>
+        </a>
+    
+    
+        <a>
+            <div id="js">
+                JS
+            </div>
+        </a>
+            
+        <a href="sql.html">
+            <div id="sql">
+                SQL
+            </div>
+        </a>
+    
+    
+        <a>
+            <div id="acc">
+                 ACC
+            </div>
+        </a>
+    
+    
+        <a>
+            <div id="php">
+                PHP
+            </div>
+        </a>
+    
+    
+    
+            <!--SPIS TREŚCI -->
+            <div id="spis" class="spis">
+                <div class="tytul" onclick="toggleSpis()">SPIS TRESCI</div>
+                <div class="tresc" id="trescSpisu">
+                    <a  href="#zalaczanie" onclick="scrollToSection('zalaczanie'); hideSpis()">Skrypt</a><br> 
+                    <a  href="#definiowanie" onclick="scrollToSection('definiowanie'); hideSpis()">Zmienne</a><br>
+                    <a  href="#operatory" onclick="scrollToSection('operatory'); hideSpis()">Operatory</a><br>
+                    <a  href="#okna" onclick="scrollToSection('okna'); hideSpis()">Okna</a><br>
+                    <a  href="#warunki" onclick="scrollToSection('warunki'); hideSpis()">Warunki</a><br>
+                    <a  href="#petle" onclick="scrollToSection('petle'); hideSpis()">Petle</a><br>
+
+                </div>
+            </div>
+    
+    
+    
+    
+    
+        </div>
+
+
+
+    <div id="notes">
+        <p style="font-size: 90px; line-height: 0px; text-align: center; color: rgb(255, 125, 125);" >DISCLAIMER</p>
+        <p>Wszystkie notatki tutaj sa niezbyt profesjonalne i kompletne poniewaz zawieraja tylko to co czego uczymy sie w szkole, wszystkie bledy na stronie zglaszajcie na githubie badz napiszcie do mnie :) </p>
+        <p>Aktualne błedy</p>
+        <ul>
+            <li>Spis treści nie działa na IOS</li>
+            <li>Brak Polskich znaków </li>
+        </ul>
+        <br><br>
+        
+        
+        <p id="zalaczanie">Metody zalaczania skryptu</p><br>
+        <p>Plik ze skryptem, możemy go umieścić w sekcji &lt;head&gt; lub &lt;body&gt;</p>
+        <p style="color:#5bbe74">&lt;script src="skrytpy/skrypt.js"&gt;&lt;/script&gt;</p><br>
+        <p>Możemy rownież zamieścić skrypt bezpośrednio na stronie</p>
+        <p style="color:#5bbe74">&lt;script&gt;</p>
+        <p style="color:#5bbe74">&nbsp;//Twoj kod javascript</p>
+        <p style="color:#5bbe74">&lt;/script&gt;</p>
+
+        
+
+
+        <br><br><br>
+        <p id="definiowanie">Sposoby definowania zmiennych</p><br>
+        
+        <p>Slowo kluczowe VAR</p>
+        <p>Zmienne zadeklarowane za pomoca var sa przypisywane do funkcji lub globalnego kontekstu, a ich zakres jest ograniczony do kontekstu, w ktorym zostaly zdefiniowane</p>
+        <p style="color:#5bbe74">var x = 7;</p><br>
+
+        <p>Slowo kluczowe LET</p>
+        <p>Zmienne deklarowane za pomoca let maja zasieg ograniczony do bloku, w ktorym zostaly zdefiniowane</p>
+        <p style="color:#5bbe74">let y = 18;</p><br>
+
+        <p>Slowo kluczowe CONST</p>
+        <p>Zmienne deklarowane za pomoca const sa stale i nie moga byc ponownie przypisane. Jednak wartosc obiektu, do ktorego odnosza sie, moze byc zmieniana</p>
+        <p style="color:#5bbe74">const z = 15;</p><br>
+        
+        <p>Zmienne bez slowa kluczowego</p>
+        <p> Mozemy rowniez zadeklarowac zmienna poprzez przypisanie wartosci do niej bez uzycia slow kluczowych `var`, `let` lub `const` jednak taka zmienna bedzie globalna</p>
+        <p style="color:#5bbe74">zmienna1 = "wartosc";</p><br>
+
+        <p>Destrukturyzacja</p>
+        <p>Przypisanie wielu zmiennych jednoczesnie</p>
+        <p style="color:#5bbe74">var [a, b] = [1, 2];</p>
+        <p style="color:#5bbe74">let [c, d] = [3, 4];</p>
+        <p style="color:#5bbe74">const [e, f] = [5, 6];</p><br><br><br>
+        
+
+        <p id="operatory">Operatory i ich dzialanie</p>
+        <p style="color:#5bbe74">+   dodawanie liczb oraz klejenie lańcuchow (konkatenacja)</p>
+        <p style="color:#5bbe74">-   odejmowanie liczb</p>
+        <p style="color:#5bbe74">*   mnozenie liczb</p>
+        <p style="color:#5bbe74">/   dzielenie liczb</p>
+        <p style="color:#5bbe74">++  inkrementacja ( zwiekszenie liczby o dokladnie 1 ) </p>
+        <p style="color:#5bbe74">--  dekrementacja ( zmniejszenie liczby o dokladnie 1 )</p>
+        <p style="color:#5bbe74">%   reszta z dzielenia ( tzw. modulo ) </p>
+        <p style="color:#5bbe74">=   przypisanie wartości do zmiennej</p>
+        <p style="color:#5bbe74">==  porownanie wartości</p>
+        <p style="color:#5bbe74"><   mniejsze od</p>
+        <p style="color:#5bbe74"><=  mniejsze lub rowne od</p>
+        <p style="color:#5bbe74">>   wieksze od</p>
+        <p style="color:#5bbe74">>=  wieksze lub rowne od</p>
+        <p style="color:#5bbe74">!   zaprzeczenie (negacja)</p>
+        <p style="color:#5bbe74">&&  logiczne i (and)</p>
+        <p style="color:#5bbe74">||  logiczne lub (or)</p>
+        <p style="color:#5bbe74">+=  skrocony zapis, np a += b odpowiada a = a + b </p>
+        <p style="color:#5bbe74">-=  skrocony zapis, np a -= b odpowiada a = a - b</p>
+        <p style="color:#5bbe74">*=  skrocony zapis, np a *= b odpowiada a = a * b</p>
+        <p style="color:#5bbe74">/=  skrocony zapis, np a /= b odpowiada a = a / b</p>
+        <p style="color:#5bbe74">%=  skrocony zapis, np a %= b odpowiada a = a % b</p>
+        <br><br><br>
+        <p id="okna">Okna dialogowe</p><br>
+        <p>ALERT Wyświetla prosty komunikat dla uzytkownika</p>
+        <p style="color:#5bbe74">alert("Tresc komunikatu");</p><br>
+
+        <p>CONFIRM Wyświetla komunikat z opcja potwierdzenia lub anulowania</p>
+        <p style="color:#5bbe74">var potwierdzenie = confirm("Czy na pewno chcesz kontynowac?");</p>
+        <p style="color:#5bbe74">if ( potwierdzenie ){</p>
+        <p style="color:#5bbe74">&nbsp; // Kod ktory zostanie wykonany po potwierdzeniu</p>
+        <p style="color:#5bbe74">} else { </p>
+        <p style="color:#5bbe74">&nbsp; // Kod ktory zostanie wykonany anulowaniu</p>
+        <p style="color:#5bbe74">}</p><br>
+
+        <p>PROMPT Wyświetla okno z polem tekstowym, ktore umożliwia użytkownikowi wprowadzenie danych</p>
+        <p style="color:#5bbe74">var imie = prompt("Prosze wpisać swoje imie:")</p>
+        <p style="color:#5bbe74">if (imie != null) {</p>
+        <p style="color:#5bbe74">&nbsp; // Kod ktory zostanie wykonany po wpisaniu imienia </p>
+        <p style="color:#5bbe74">} else {</p>
+        <p style="color:#5bbe74">&nbsp; // Kod ktory zostanie wykonany po zostawieniu pola pustego</p>
+        <p style="color:#5bbe74">}</p>
+        <br><br><br>
+
+        <p id="warunki">Instrukcje warunkowe</p><br>
+        <p>Instrukcja if (jezeli) </p>
+        <p style="color:#5bbe74">if( warunek ){</p>
+        <p style="color:#5bbe74">&nbsp; // Kod który zosatnie wykonany po spełnieniu warunku</p>
+        <p style="color:#5bbe74">}</p><br>
+
+        <p>Instrukcja else (w przeciwnym razie) </p>
+        <p style="color:#5bbe74">if( warunek ){</p>
+        <p style="color:#5bbe74">&nbsp; // Kod który zosatnie wykonany po spełnieniu warunku</p>
+        <p style="color:#5bbe74">} else {</p>
+        <p style="color:#5bbe74">&nbsp; // Kod który zosatnie wykonany w przeciwnym wypadku</p>
+        <p style="color:#5bbe74">}</p><br>
+
+        <p>Instrukcja else if ( wiele warunków ) </p>
+        <p style="color:#5bbe74">if( warunek ){</p>
+        <p style="color:#5bbe74">&nbsp; // Kod który zosatnie wykonany po spełnieniu warunku</p>
+        <p style="color:#5bbe74">} else if (warunek2) {</p>
+        <p style="color:#5bbe74">&nbsp; // Kod który zosatnie wykonany po spełnieniu warunku2</p>
+        <p style="color:#5bbe74">} else if (warunek3) {</p>
+        <p style="color:#5bbe74">&nbsp; // Kod który zosatnie wykonany po spełnieniu warunku3</p>
+        <p style="color:#5bbe74">} else {</p>
+        <p style="color:#5bbe74">&nbsp; // Kod który zosatnie wykonany w przeciwnym wypadku</p>
+        <p style="color:#5bbe74">}</p><br><br><br>
+
+        <p id="petle">Pętle</p><br>
+
+        <p>Petla for</p>
+        <p style="color:#5bbe74">for (inicjalizacja; warunek; krok){</p>
+        <p style="color:#5bbe74">&nbsp; // Kod do wykonania w każdej literacji</p>
+        <p style="color:#5bbe74">}</p>
+        <ul>
+            <li>Inicjalizacja - Zazwyczaj jest to deklaracja i inicjalizacja zmiennej, która będzie używana jako licznik pętli. Na przykład 'let x = 0' przypisuje wartość zmiennej 'x' na zero</li><br>
+            <li>Warunek - Jeśli jest spełniony pętla kontynuuje swoje działanie, jeśli nie pętla kończy się.</li><br>
+            <li>Krok - Instrukcja wykonywwana w każdej literacji pętli, dla przykładu 'x++" będzie zwiększał wartość 'x' o 1 przy każdym wykonaniu pętli</li>
+        </ul>
+        <p>Przykład użycia pętli for</p>
+        <p style="color:#5bbe74">for (let x = 0; x < 8; x++){</p>
+        <p style="color:#5bbe74">&nbsp;document.write(x);</p>
+        <p style="color:#5bbe74">}</p>
+        <p>Tak zapisana pętla będzie dodawać do zmiennej 'x' 1 przy pomocy inkrementacji dopóki zmienna 'x' będzie mniejsza od 8 </p>
+        <p>Wynikiem takiej pętli będzie</p>
+        <p style="color:#5bbe74">01234567</p><br>
+
+
+        <p>Petla while</p>
+        <p style="color:#5bbe74">while (warunek){</p>
+        <p style="color:#5bbe74">&nbsp; // Kod do wykonania w każdej literacji</p>
+        <p style="color:#5bbe74">}</p>
+        <p>Pętla while wykonuje się do momentu kiedy warunek jest prawdziwy</p>
+        <p>Przykład użycia pętli while</p>
+        <p style="color:#5bbe74">let x = 0;</p>
+        <p style="color:#5bbe74">while (x < 10) {</p>
+        <p style="color:#5bbe74">&nbsp; x += 3;</p>
+        <p style="color:#5bbe74">&nbsp; document.write(x);</p>
+        <p style="color:#5bbe74">}</p>
+        <p>Tak zapisana pętla będzie dodawać 3 do zmiennej `x` tak długo aż jej wartość będzie mniejsza niż 10 </p>
+        <p>Wynikiem takiej pętli będzie</p>
+        <p style="color:#5bbe74">369</p>
+
+
+        
+
+
+
+
+
+
+
+    </div>
+
+
+    <div id="fwc">
+        By BurnoutBB<br>
+        <a href="https://www.facebook.com/kacper.topro" target="_blank"><img src="fb.png" height="100px"></a>
+        <a href="https://www.instagram.com/burnout_bb/" target="_blank"><img src="ig.png" height="100px"></a>
+        <a href="https://github.com/BurnoutBB" target="_blank"><img src="github.png" height="100px"></a>
+    </div>
+</body>
+</html>

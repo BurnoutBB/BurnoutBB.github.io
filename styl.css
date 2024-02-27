@@ -1,4 +1,7 @@
-
+@font-face {
+    font-family: "OCR A" ;
+    src: url(ocra.otf);
+}
 body{
     zoom: 50%;
     background-color:rgb(32, 32, 32);
@@ -111,9 +114,9 @@ p{
     
 }
 .tresc {
-    line-height: 60px;
+    line-height: 100px;
     padding-left: 10px;
-    font-size: 40px;
+    font-size: auto;
     text-align: left;
     width: 100%;
     margin-top: 2%;
@@ -123,9 +126,14 @@ p{
     border-radius: 10px;
     position: absolute;
 }
-.highlight {
+.highlight_sql {
     background-color: purple;
     transition-duration: 0.2s;
     border-radius: 10px;
     
+}
+.highlight_js{
+    background-color: #5bbe74;
+    transition-duration: 0.2s;
+    border-radius: 10px;
 }
