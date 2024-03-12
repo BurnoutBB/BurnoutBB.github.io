@@ -34,7 +34,7 @@
     
     
         <a>
-            <div id="js">
+            <div style="outline: 10px solid white;" id="js">
                 JS
             </div>
         </a>
@@ -71,6 +71,8 @@
                     <a  href="#okna" onclick="scrollToSection('okna'); hideSpis()">Okna</a><br>
                     <a  href="#warunki" onclick="scrollToSection('warunki'); hideSpis()">Warunki</a><br>
                     <a  href="#petle" onclick="scrollToSection('petle'); hideSpis()">Petle</a><br>
+                    <a href="#zdarzenia" onclick="scrollToSection('zdarzenia'); hideSpis()">Zdarzenia</a><br>
+                    <a href="#DOM" onclick="scrollToSection('DOM'); hideSpis()">Obiekty DOM</a><br>
 
                 </div>
             </div>
@@ -97,7 +99,12 @@
         <p id="zalaczanie">Metody zalaczania skryptu</p><br>
         <p>Plik ze skryptem, możemy go umieścić w sekcji &lt;head&gt; lub &lt;body&gt;</p>
         <p style="color:#5bbe74">&lt;script src="skrytpy/skrypt.js"&gt;&lt;/script&gt;</p><br>
+        
+        
+        
         <p>Możemy rownież zamieścić skrypt bezpośrednio na stronie</p>
+
+        
         <p style="color:#5bbe74">&lt;script&gt;</p>
         <p style="color:#5bbe74">&nbsp;//Twoj kod javascript</p>
         <p style="color:#5bbe74">&lt;/script&gt;</p>
@@ -232,7 +239,83 @@
         <p style="color:#5bbe74">}</p>
         <p>Tak zapisana pętla będzie dodawać 3 do zmiennej `x` tak długo aż jej wartość będzie mniejsza niż 10 </p>
         <p>Wynikiem takiej pętli będzie</p>
-        <p style="color:#5bbe74">369</p>
+        <p style="color:#5bbe74">369</p><br>
+
+        <p>Petla do... while</p>
+        <p style="color:#5bbe74">do {</p>
+        <p style="color:#5bbe74">&nbsp; // Kod do wykonania w każdej literacji</p>
+        <p style="color:#5bbe74">} while (warunek)</p>
+        <p>Pętla do... while jest bardzo podobna do pętli while z tą różnicą że warunek jest sprawdzany dopiero po wykonaniu kodu a nie przed nim. Co oznacza że pętla zostanie wykonana co najmniej raz nawet jeśli warunek jest fałszywy na początku.</p>
+        <p>Przykład użycia pętli do...while</p>
+        <p style="color:#5bbe74">let x = 0</p>
+        <p style="color:#5bbe74">do {</p>
+        <p style="color:#5bbe74">&nbsp;document.write(x);</p>
+        <p style="color:#5bbe74">&nbsp; x++;</p>
+        <p style="color:#5bbe74">} while( x <= 12 );</p>
+        <p>Tak zapisana pętla będzie dodawać 1 do zmiennej `x` tak długo aż jej wartość będzie mniejsza lub równa 12</p>
+        <p>Wynikiem takiej pętli będzie</p>
+        <p style="color:#5bbe74">0123456789101112</p><br><br><br>
+
+        <p id="zdarzenia">Zdarzenia</p><br>
+        <p>Zdarzenie onclick</p>
+        <p>To zdarzenie wystepuje gdy element zostanie kliknięty przez użytkownika</p>
+        <p style="color:#5bbe74">&lt;input type="submit" onclick="funckja()" value="Naciśnij mnie" &gt;</p>
+        <p>Tak zapisane zdarzenie onclick wywoła funkcję o nazwie "funkcja()" w momencie kiedy użytkownik naciśnie przycisk</p><br>
+
+        <p>Zdarzenie onmouseover</p>
+        <p>To zdarzenie występuje gdy element zostanie najechany myszką</p>
+        <p style="color:#5bbe74">&lt;img src="obraz1.jpg" onmouseover="funckja2()" &gt;</p>
+        <p>Tak zapisane zdarzenie onmouseover wywoła funkcję o nazwie "funckja2()" w momencie kiedy użytkownik najedzie myszką na zdjęcie</p><br>
+
+        <p>Zdarzenie onmouseout</p>
+        <p> To zdarzenie występuje gdy mysz zjedzie z elementu na który najechała, jest to odwrotność zdarzenia onmouseover</p>
+        <p style="color:#5bbe74">&lt;img src="obraz1.jpg" onmouseout="funckja3()" &gt;</p>
+        <p>Tak zapisane zdarzenie onmouseover wywoła funkcję o nazwie "funckja3()" w momencie kiedy użytkownik zjedzie myszką ze zdjęcia</p><br>
+
+        <p>Zdarzenie onchange</p>
+        <p>To zdarzenie występuje gdy wartość elementu zostanie zmieniona</p>
+        <p style="color:#5bbe74">&lt;input type="number" onchange="funkcja4()"&gt;</p>
+        <p>Tak zapisane zdarzenie onchange wywoła funkcję "funkcja4()" za każdym razem kiedy wartość &lt;input type="number" &gt; ulegnie zmianie</p><br>
+
+        <p>Zdarzenie onfocus</p>
+        <p>To zdarzenie występuje gdy element dostaje fokus (Jest aktywny)</p>
+        <p style="color:#5bbe74">&lt;input type="text" onfocus="funkcja5()"&gt;</p>
+        <p>Tak zapisane zdarzenie onfocus wywoła funckję "funckja5() w momencie gdy element &lt;input type="text" &gt; będzie aktywny</p><br>
+
+        <p>Zdarzenie onblur</p>
+        <p>To zdarzenie wystepuje gdy element traci fokus (Przestaje być aktywny)</p>
+        <p style="color:#5bbe74">&lt;input type="text" onblur="funkcja6()"&gt;</p>
+        <p>Tak zapisane zdarzenie onblur wywoła funckję "funkcja6()" w momencie gdy element &lt;input type="text" &gt; przestanie być aktywny</p><br><br><br>
+        
+        <p id="DOM">Obiekty DOM</p><br>
+        
+        <p>document.write</p>
+        <p>Ten obiekt jest wykorzystywany do generowania zawartości na stronie</p>
+        <p style="color:#5bbe74">document.write("Tekst który zostanie wyświetlony na stronie")</p>
+        <p>Jeśli chcemy generować kod języka HTML za pomocą obiektu document.write należy używać apostrofów zamiast cudzysłowów</p>  
+        <p>Przykład użycia</p>
+        <p style="color:#5bbe74">document.write('&lt;div id="mój_div"&gt;&lt;p&gt;Przykładowy tekst&lt;/p&gt;&lt;/div&gt;);</p>
+        <p>Warto też tutaj wspomnieć o elemencie console.log który nie jest obiektem DOM ale ma podobne działanie do document.write z tą różnicą że generowana treść będzie w konsoli a nie na stronie</p>
+        <p>Przykład użycia</p>
+        <p style="color:#5bbe74">console.log("To jest komunikat dla konsoli")</p><br>
+        
+        <p>document.getElementById</p>
+        <p>Tak zapisany obiekt pobierze wartość z elementu o id takim jak wpiszemy w nawias</p>
+        <p style="color:#5bbe74">var x = document.getElementById("pole_numeryczne").value;</p>
+        <p>W ten sposób możemy przypisać wartość z pola numerycznego o id="pole_numeryczne" do zmiennej `x`</p>
+        <p>Przykład użycia</p>
+        <p style="color:#5bbe74">function PobieranieDanych(){</p>
+        <p style="color:#5bbe74">&nbsp; var x = document.getElementById("pole_numeryczne").value</p>
+        <p style="color:#5bbe74">&nbsp; document.write("Pobrana wartość to: " + x)
+        <p style="color:#5bbe74">}</p>
+
+        
+
+
+
+
+
+    
 
 
         

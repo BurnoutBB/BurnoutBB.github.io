@@ -24,7 +24,7 @@ body{
     margin-left: 0.83%;
     margin-right: 0.83%;
     border-radius: 5px;
-    
+    margin-top: 6px;
     font-size: 90px;
 }
 #html{
@@ -136,4 +136,14 @@ p{
     background-color: #5bbe74;
     transition-duration: 0.2s;
     border-radius: 10px;
+}
+textarea{
+    font-family: Arial;
+    resize: none;
+    color: #5bbe74;
+    width: 100%;
+    font-size: 40px;
+
+    background-color:rgb(32, 32, 32);
+    overflow-y: hidden;
 }
