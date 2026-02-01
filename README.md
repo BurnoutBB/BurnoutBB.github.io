@@ -8,3 +8,4 @@ Dlaczego jest spoko? Krutka lista
 ## Dziękuję za uwagę
 
     Jest markdown jest bomba
+***Mega smieszne w ogole ze CSS to 65% zawartości 💀💀***
