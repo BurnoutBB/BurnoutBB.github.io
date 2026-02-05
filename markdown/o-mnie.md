@@ -36,4 +36,4 @@ W sumie to lubię gotować całkiem. Jestem fanatykiem **LECZO**.
 
 ---
 
-_Stronkę zrobiłem tak na 60% samodzielnie - tło i bąbelki są AI, potrzebowałem też pomocy z gradientem na tekście, galerią oraz markdownem_
+_Trooooochę dużo wspomagałem się AI tworząc tą stronę. Głównie Claudem + grafika w tle zrobiona przez Gemini_

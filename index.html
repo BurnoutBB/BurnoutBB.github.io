@@ -62,12 +62,35 @@
                 <li>Więcej ciekawych funkcji</li>
                 <li>Zakładka projekty</li>
                 <li>Polskie znaki 😭</li>
+                <li>Sortowanie i kategorie w galerii</li>
             </ul>
         </div>
     </div>
 
     <div id="sociale">
-        <marquee>🐟 🐠 🐡 🦈 🐬 🐳 🐋 🌊</marquee>
+        <div class="music-player">
+            <button class="player-btn" id="playPauseBtn">
+                <span class="play-icon">▶</span>
+                <span class="pause-icon" style="display: none;">⏸</span>
+            </button>
+            <div class="player-info">
+                <div class="song-title">Muzyka 🌊</div>
+                <div class="progress-container">
+                    <div class="progress-bar" id="progressBar">
+                        <div class="progress-fill" id="progressFill"></div>
+                    </div>
+                    <div class="time-info">
+                        <span id="currentTime">0:00</span>
+                        <span id="duration">0:00</span>
+                    </div>
+                </div>
+            </div>
+            <div class="volume-control">
+                <span class="volume-icon">🔊</span>
+                <input type="range" class="volume-slider" id="volumeSlider" min="0" max="100" value="70">
+            </div>
+        </div>
+        <audio id="audioPlayer" src="music/music.mp3" preload="metadata"></audio>
     </div>
 
     <div id="footer">
@@ -75,5 +98,6 @@
     </div>
      <script src="js/script.js"></script>
      <script src="js/galeria.js"></script>
+     <script src="js/player.js"></script>
 </body>
 </html>

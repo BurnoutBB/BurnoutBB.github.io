@@ -42,43 +42,49 @@ const zawartosciPaths = {
     'Sprzet': 'markdown/sprzet.md'
 };
 
-// ========== ZAWARTOŚĆ GALERII (HTML) ==========
+// ========== PARSOWANIE LISTY ZDJĘĆ ==========
 
-const galeriaHTML = `
-    <div class="galeria-lista">
-        <div class="galeria-item">
-            <img src="img/tło.png" alt="Zdjęcie 1" class="galeria-miniatura">
-            <div class="galeria-info">
-                <h2>Tło tej strony</h2>
-                <p>AI tło którego użyłem na tej stronie</p>
-            </div>
-        </div>
+function parseZdjeciaLista(tekst) {
+    const zdjecia = [];
+    const bloki = tekst.split('>').filter(b => b.trim() !== '');
+    
+    bloki.forEach(blok => {
+        const srcMatch = blok.match(/photo_src="([^"]+)"/);
+        const titleMatch = blok.match(/photo_title="([^"]+)"/);
+        const descMatch = blok.match(/photo_desc="([^"]+)"/);
         
+        if (srcMatch && titleMatch && descMatch) {
+            zdjecia.push({
+                src: srcMatch[1],
+                title: titleMatch[1],
+                desc: descMatch[1]
+            });
+        }
+    });
+    
+    return zdjecia;
+}
+
+// ========== GENEROWANIE HTML GALERII ==========
+
+function generateGaleriaHTML(zdjecia) {
+    let html = '<div class="galeria-lista">';
+    
+    zdjecia.forEach((zdjecie, index) => {
+        html += `
         <div class="galeria-item">
-            <img src="img/osp.jpg" alt="Zdjęcie 2" class="galeria-miniatura">
+            <img src="${zdjecie.src}" alt="Zdjęcie ${index + 1}" class="galeria-miniatura">
             <div class="galeria-info">
-                <h2>OSP w Minecraft</h2>
-                <p>OSP z mojego miasta które odwzorowałem w Minecraft</p>
+                <h2>${zdjecie.title}</h2>
+                <p>${zdjecie.desc}</p>
             </div>
         </div>
-        
-        <div class="galeria-item">
-            <img src="img/przychodnia.jpg" alt="Zdjęcie 3" class="galeria-miniatura">
-            <div class="galeria-info">
-                <h2>Przychodnia w Minecraft</h2>
-                <p>Przychodnia z mojego miasta którą odwzorowałem w Minecraft</p>
-            </div>
-        </div>
-        
-        <div class="galeria-item">
-            <img src="img/kosciol.jpg" alt="Zdjęcie 4" class="galeria-miniatura">
-            <div class="galeria-info">
-                <h2>KOŚCIÓŁ w Minekraft</h2>
-                <p>Chyba moja najlepsza budowla kiedykolwiek</p>
-            </div>
-        </div>
-    </div>
-`;
+        `;
+    });
+    
+    html += '</div>';
+    return html;
+}
 
 // ========== FUNKCJA ŁADUJĄCA ZAWARTOŚĆ ==========
 
@@ -90,16 +96,26 @@ async function loadContent(nazwaSekcji) {
     
     setTimeout(async () => {
         if (nazwaSekcji === 'Galeria') {
-            // Galeria to HTML
-            zawartosc.innerHTML = galeriaHTML;
-            
-            // Obsługa kliknięć w miniatury
-            const miniatury = document.querySelectorAll('.galeria-miniatura');
-            miniatury.forEach(img => {
-                img.addEventListener('click', () => {
-                    window.open(img.src, '_blank');
+            // Wczytaj listę zdjęć z pliku
+            try {
+                const response = await fetch('zdjecia_lista.txt');
+                const tekst = await response.text();
+                const zdjecia = parseZdjeciaLista(tekst);
+                const galeriaHTML = generateGaleriaHTML(zdjecia);
+                
+                zawartosc.innerHTML = galeriaHTML;
+                
+                // Obsługa kliknięć w miniatury
+                const miniatury = document.querySelectorAll('.galeria-miniatura');
+                miniatury.forEach(img => {
+                    img.addEventListener('click', () => {
+                        window.open(img.src, '_blank');
+                    });
                 });
-            });
+            } catch (error) {
+                zawartosc.innerHTML = '<p>Błąd ładowania galerii</p>';
+                console.error('Błąd ładowania zdjecia_lista.txt:', error);
+            }
         } else {
             // Ładowanie markdown
             const path = zawartosciPaths[nazwaSekcji];

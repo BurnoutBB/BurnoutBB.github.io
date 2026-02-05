@@ -1,0 +1,30 @@
+>
+photo_src="img/tło.png"
+photo_title="Tło tej strony"
+photo_desc="AI tło którego użyłem na tej stronie"
+>
+photo_src="img/osp.jpg"
+photo_title="OSP w Minecraft"
+photo_desc="OSP z mojego miasta które odwzorowałem w Minecraft"
+>
+photo_src="img/przychodnia.jpg"
+photo_title="Przychodnia w Minecraft"
+photo_desc="Przychodnia z mojego miasta którą odwzorowałem w Minecraft"
+>
+photo_src="img/kosciol.jpg"
+photo_title="KOŚCIÓŁ w Minekraft"
+photo_desc="Chyba moja najlepsza budowla kiedykolwiek"
+>
+photo_src="img/eva.jpg"
+photo_title="Kerfogelion"
+photo_desc="Taki tam smieszny rysunek"
+>
+>
+photo_src="img/zsm4k.png"
+photo_title="ZSM Glubczyce"
+photo_desc="Ale w dużej rozdzielczosci"
+>
+photo_src="img/oczo.jpg"
+photo_title="Moje oko"
+photo_desc="niebieskie"
+>
