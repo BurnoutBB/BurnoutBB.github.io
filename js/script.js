@@ -65,6 +65,29 @@ function parseZdjeciaLista(tekst) {
     return zdjecia;
 }
 
+// ========== PARSOWANIE LISTY PROJEKTÓW ==========
+
+function parseProjektyLista(tekst) {
+    const projekty = [];
+    const bloki = tekst.split('>').filter(b => b.trim() !== '');
+    
+    bloki.forEach(blok => {
+        const tytulMatch = blok.match(/projekt_tytul="([^"]+)"/);
+        const opisMatch = blok.match(/projekt_opis="([^"]+)"/);
+        const linkMatch = blok.match(/projekt_link="([^"]+)"/);
+        
+        if (tytulMatch && opisMatch) {
+            projekty.push({
+                tytul: tytulMatch[1],
+                opis: opisMatch[1],
+                link: linkMatch ? linkMatch[1] : null
+            });
+        }
+    });
+    
+    return projekty;
+}
+
 // ========== GENEROWANIE HTML GALERII ==========
 
 function generateGaleriaHTML(zdjecia) {
@@ -78,6 +101,31 @@ function generateGaleriaHTML(zdjecia) {
                 <h2>${zdjecie.title}</h2>
                 <p>${zdjecie.desc}</p>
             </div>
+        </div>
+        `;
+    });
+    
+    html += '</div>';
+    return html;
+}
+
+// ========== GENEROWANIE HTML PROJEKTÓW ==========
+
+function generateProjektyHTML(projekty) {
+    let html = '<div class="projekty-lista">';
+    
+    projekty.forEach((projekt, index) => {
+        const linkStart = projekt.link ? `<a href="${projekt.link}" target="_blank" class="projekt-link">` : '<div class="projekt-no-link">';
+        const linkEnd = projekt.link ? '</a>' : '</div>';
+        
+        html += `
+        <div class="projekt-item">
+            ${linkStart}
+                <div class="projekt-info">
+                    <h2>${projekt.tytul}</h2>
+                    <p>${projekt.opis}</p>
+                </div>
+            ${linkEnd}
         </div>
         `;
     });
@@ -115,6 +163,19 @@ async function loadContent(nazwaSekcji) {
             } catch (error) {
                 zawartosc.innerHTML = '<p>Błąd ładowania galerii</p>';
                 console.error('Błąd ładowania zdjecia_lista.txt:', error);
+            }
+        } else if (nazwaSekcji === 'Projekty') {
+            // Wczytaj listę projektów z pliku
+            try {
+                const response = await fetch('projekty_lista.txt');
+                const tekst = await response.text();
+                const projekty = parseProjektyLista(tekst);
+                const projektyHTML = generateProjektyHTML(projekty);
+                
+                zawartosc.innerHTML = projektyHTML;
+            } catch (error) {
+                zawartosc.innerHTML = '<p>Błąd ładowania projektów</p>';
+                console.error('Błąd ładowania projekty_lista.txt:', error);
             }
         } else {
             // Ładowanie markdown

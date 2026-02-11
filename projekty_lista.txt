@@ -1,0 +1,21 @@
+<projekt
+projekt_tytul="Przykładowy projekt 1"
+projekt_opis="Lorem ipsum kocham piwko"
+projekt_link="https://burnoutbb.github.io/BurnoutBB/"
+>
+
+<projekt
+projekt_tytul="Przykładowy projekt 2"
+projekt_opis="Lorem ipsum kocham piwko"
+projekt_link="https://burnoutbb.github.io/BurnoutBB/"
+>
+<projekt
+projekt_tytul="Przykładowy projekt 3"
+projekt_opis="Lorem ipsum kocham piwko"
+projekt_link="https://burnoutbb.github.io/BurnoutBB/"
+>
+<projekt
+projekt_tytul="Przykładowy projekt 4"
+projekt_opis="Lorem ipsum kocham piwko"
+projekt_link="https://burnoutbb.github.io/BurnoutBB/"
+>

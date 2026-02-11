@@ -1,0 +1,94 @@
+/* ===== STYLE DLA MARKDOWN ===== */
+
+.markdown-content {
+    width: 95%;
+    height: 95%;
+    padding: 20px;
+    overflow-y: scroll;
+    scrollbar-width: none;
+    font-family: Arial;
+    color: rgb(193, 204, 236);
+    box-sizing: border-box;
+}
+
+.markdown-content::-webkit-scrollbar {
+    display: none;
+}
+
+.markdown-content h1 {
+    font-family: SigmaFont;
+    font-size: 35px;
+    margin: 20px 0;
+    background: linear-gradient(0deg,
+        rgba(96, 177, 209, 1) 1%,
+        rgba(255, 255, 255, 1) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 2px #0044a495;
+    background-clip: text;
+}
+
+.markdown-content h2 {
+    font-family: SigmaFont;
+    font-size: 28px;
+    margin: 18px 0 10px 0;
+    background: linear-gradient(0deg,
+        rgba(96, 177, 209, 1) 1%,
+        rgba(255, 255, 255, 1) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 1.5px #0044a495;
+    background-clip: text;
+}
+
+.markdown-content h3 {
+    font-family: SigmaFont;
+    font-size: 24px;
+    margin: 15px 0 8px 0;
+    background: linear-gradient(0deg,
+        rgba(96, 177, 209, 1) 1%,
+        rgba(255, 255, 255, 1) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 1px #0044a495;
+    background-clip: text;
+}
+
+.markdown-content p {
+    font-size: 20px;
+    line-height: 1.6;
+    margin: 12px 0;
+}
+
+.markdown-content strong {
+    color: rgb(220, 230, 255);
+    font-weight: bold;
+}
+
+.markdown-content em {
+    color: rgb(200, 215, 245);
+    font-style: italic;
+}
+
+.markdown-content ul {
+    margin: 15px 0;
+    padding-left: 0;
+    list-style-position: inside;
+}
+
+.markdown-content li {
+    font-size: 20px;
+    line-height: 1.8;
+    margin: 8px 0;
+    padding-left: 10px;
+}
+
+.markdown-content hr {
+    border: none;
+    height: 2px;
+    background: linear-gradient(90deg,
+        rgba(96, 177, 209, 0.3) 0%,
+        rgba(199, 255, 255, 0.5) 50%,
+        rgba(96, 177, 209, 0.3) 100%);
+    margin: 25px 0;
+}

@@ -1,0 +1,41 @@
+/* ===== BASE - FONTY I PODSTAWY ===== */
+
+@font-face {
+    font-family: SigmaFont;
+    src: url('Qilka-Bold\ copy.otf');
+}
+
+body {
+    background-image: url('tło.png');
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    position: relative;
+    overflow-x: hidden;
+}
+
+/* ===== TEXTAREA ===== */
+textarea {
+    overflow-y: scroll;
+    scrollbar-width: none;
+    width: 95%;
+    height: 95%;
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+    background: none;
+    resize: none;
+    border: none;
+    font-family: Arial;
+    font-size: 25px;
+    color: rgb(193, 204, 236);
+}
+
+textarea:focus {
+    border: none;
+    outline: none;
+}
+
+textarea::-webkit-scrollbar {
+    display: none; 
+}

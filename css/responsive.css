@@ -1,0 +1,218 @@
+/* ===== RESPONSIVE - MEDIA QUERIES ===== */
+
+/* ===== 1700px i mniej ===== */
+@media (max-width:1700px){
+    .naw_button{
+        font-size: 30px;
+    }
+    .naw_button.long-text {
+        font-size: 26px;
+    }
+    .naw_button.long-text:hover {
+        font-size: 27px;
+    }
+    .StopkaGradient{
+        font-size: 30px;
+    }
+}
+
+/* ===== 1300px i mniej ===== */
+@media (max-width:1300px){
+    .naw_button{
+        font-size: 20px;
+        width: 15%;
+    }
+    .naw_button span{
+        -webkit-text-stroke: 2px #0044a495;
+    }
+    .naw_button:hover{
+        font-size: 21px;
+    }
+    .naw_button.long-text {
+        font-size: 18px;
+    }
+    .naw_button.long-text:hover {
+        font-size: 19px;
+    }
+    
+    #baner{
+        justify-content: center;
+        align-items: center;
+        margin-top: 2%;
+    }
+    
+    #footer{
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    #nawigacja{
+        justify-content: center;
+        align-items: center;
+        margin-top: 2%;
+    }
+    
+    #zawartosc{
+        width: 80%;
+        margin-left: 10%;
+        margin-right: 10%;
+        margin-top: 2%;
+    }
+    
+    #changelog{
+        width: 80%;
+        margin-left: 10%;
+        margin-right: 10%;
+        margin-top: 2%;
+    }
+    
+    #sociale{
+        width: 80%;
+        margin-left: 10%;
+        margin-right: 10%;
+        margin-top: 2%;
+    }
+    
+    /* Music Player */
+    .volume-control {
+        display: none;
+    }
+    
+    .song-title {
+        font-size: 16px;
+        -webkit-text-stroke: 1px #0044a495;
+    }
+}
+
+/* ===== 1200px i mniej ===== */
+@media (max-width:1200px){
+    .StopkaGradient{
+        font-size: 20px;
+    }
+}
+
+/* ===== 770px i mniej ===== */
+@media (max-width:770px){
+    .naw_button{
+        width: 30%;
+    }
+}
+
+/* ===== 600px i mniej ===== */
+@media (max-width:600px){
+    #baner h1{
+        font-size: 40px;
+    }
+    
+    #baner{
+        margin-top: 5%;
+        width: 95%;
+        margin-left: 2.5%;
+        margin-right: 2.5%;
+        height: 80px;
+    }
+    
+    #nawigacja{
+        margin-top: 5%;
+        width: 95%;
+        margin-left: 2.5%;
+        margin-right: 2.5%;
+        height: 60px;
+    }
+    
+    #zawartosc{
+        margin-top: 5%;
+        width: 95%;
+        margin-left: 2.5%;
+        margin-right: 2.5%;
+    }
+    
+    #changelog{
+        margin-top: 5%;
+        width: 95%;
+        margin-left: 2.5%;
+        margin-right: 2.5%;
+    }
+    
+    #sociale{
+        margin-top: 5%;
+        width: 95%;
+        margin-left: 2.5%;
+        margin-right: 2.5%;
+    }
+    
+    #footer{
+        margin-top: 5%;
+        width: 95%;
+        margin-left: 2.5%;
+        margin-right: 2.5%;
+    }
+    
+    .naw_button{
+        outline: 2px solid rgba(199, 255, 255, 0.5);
+        width: 18%;
+        font-size: 15px;
+    }
+    
+    .naw_button:hover {
+        font-size: 13px; /* zmniejsza się o 2px zamiast powiększać */
+    }
+    
+    .naw_button.long-text {
+        font-size: 13px;
+    }
+    
+    .naw_button.long-text:hover {
+        font-size: 11px; /* zmniejsza się */
+    }
+    
+    #nawigacja{
+        height: 40px;
+    }
+    
+    #baner{
+        height: 50px;
+    }
+    
+    /* Music Player */
+    .music-player {
+        padding: 0 10px;
+        gap: 10px;
+    }
+    
+    .player-btn {
+        width: 40px;
+        height: 40px;
+        font-size: 16px;
+    }
+    
+    .song-title {
+        font-size: 14px;
+    }
+    
+    .time-info {
+        font-size: 10px;
+    }
+    
+    .progress-bar {
+        height: 6px;
+    }
+    
+    /* Projekty */
+    .projekt-info h2 {
+        font-size: 20px;
+        -webkit-text-stroke: 1px #0044a495;
+    }
+    
+    .projekt-info p {
+        font-size: 14px;
+    }
+    
+    .projekt-link,
+    .projekt-no-link {
+        padding: 10px;
+        gap: 12px;
+    }
+}

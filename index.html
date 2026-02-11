@@ -5,8 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BurnoutBB</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/theme-switcher.css">
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <script src="js/theme-switcher.js"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/photoswipe@5/dist/photoswipe.css">
+    
 </head>
 <body>
     <div class="bubbles">
@@ -39,7 +42,7 @@
         <button class="naw_button">
             <span>Sprzet</span>
         </button>
-        <button class="naw_button">
+        <button class="naw_button long-text">
             <span>Projekty</span>
         </button>
     </div>
@@ -68,30 +71,33 @@
     </div>
 
     <div id="sociale">
-        <div class="music-player">
-            <button class="player-btn" id="playPauseBtn">
-                <span class="play-icon">▶</span>
-                <span class="pause-icon" style="display: none;">⏸</span>
-            </button>
-            <div class="player-info">
-                <div class="song-title">Muzyka 🌊</div>
-                <div class="progress-container">
-                    <div class="progress-bar" id="progressBar">
-                        <div class="progress-fill" id="progressFill"></div>
-                    </div>
-                    <div class="time-info">
-                        <span id="currentTime">0:00</span>
-                        <span id="duration">0:00</span>
-                    </div>
+    <div class="music-player">
+        <button class="player-btn" id="playPauseBtn">
+            <span class="play-icon">▶</span>
+            <span class="pause-icon" style="display: none;">⏸</span>
+        </button>
+        <div class="player-info">
+            <div class="song-title">Muzyka 🌊</div>
+            <div class="progress-container">
+                <div class="progress-bar" id="progressBar">
+                    <div class="progress-fill" id="progressFill"></div>
+                </div>
+                <div class="time-info">
+                    <span id="currentTime">0:00</span>
+                    <span id="duration">0:00</span>
                 </div>
             </div>
-            <div class="volume-control">
-                <span class="volume-icon">🔊</span>
-                <input type="range" class="volume-slider" id="volumeSlider" min="0" max="100" value="70">
-            </div>
         </div>
-        <audio id="audioPlayer" src="music/music.mp3" preload="metadata"></audio>
+        <div class="volume-control">
+            <span class="volume-icon">🔊</span>
+            <input type="range" class="volume-slider" id="volumeSlider" min="0" max="100" value="70">
+        </div>
     </div>
+    <audio id="audioPlayer" src="music/music.mp3" preload="metadata"></audio>
+</div>
+
+
+
 
     <div id="footer">
         <h1 class="StopkaGradient">Zachecam do zglaszania bledow, najelpiej mailowo!!</h1>
