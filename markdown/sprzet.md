@@ -1,81 +1,56 @@
-# Sprzet
+Od wielu lat kolekcjonuję elektrozłom, więc trochę tego się nazbierało.  
+Zacznę od swojego głównego komputera, który kupiłem w 2023 roku.
 
-Tyle lat już zbieram złom że trochę się tego nazbierało. Zacznę może od mojego **głównego kompa** którego kupiłem za pieniądze zarobione w **Fabryce czekolady** XDD
-
-## Komputer głowny (z fabryki czekolady)
+## Główny komputer (2023)
 
 - **Procesor:** Ryzen 5 5600
 - **Karta graficzna:** RTX 2070 Super PNY
 - **Płyta główna:** MSI B550 Gaming Plus
-- **RAM:** Lexar 32GB (4x8GB) 3600Mhz CL18 Thor White
-- **Dysk:** Lexar 1TB M.2 PCIe NVMe NM620
-- **Zasilacz:** Seasonic B12 650W 80 Plus Bronze
+- **RAM:** Lexar 32 GB (4×8 GB) 3600 MHz CL18 Thor White
+- **Dysk:** Lexar 1 TB M.2 PCIe NVMe NM620
+- **Zasilacz:** Seasonic B12 650 W 80 Plus Bronze
 - **Obudowa:** Krux VAKO
 - **Chłodzenie:** Arctic Freezer 36
 
-## Drugi komputer (nostalgiczny)
+---
 
-Mam jeszcze drugi komputer, ale jego specyfikacji nie znam bo nie włączałem go z **3 lata** chyba, a nie chcę skłamać. Jest to mój **pierwszy komputer jakikiedykolwiek miałem** dlatego wciąż go trzymam. Działa na **Windows XP** i ma mnóstwo pirackich gier.
+## Stary komputer (pierwszy w zyciu)
 
-## Trzeci komputer (ulep)
+Mam jeszcze drugi komputer. To stary złom, ale to pierwszy komputer, jaki miałem w życiu, więc ze względu na sentyment dalej go trzymam.
 
-Jest jeszcze 3 komputer, ale to jakiś losowy ulep którego nawet nie używam. Jakaś **i7 3 generacji** i **8GB DDR3**.
-
-## Monitory
-
-Szczerze to nic konkretnego nie mogę o nich powiedzieć.
-
-- **Główny:** jakieś rozbebeszone AIO którego nie da się włączyć w cywilizowany sposób więc startuje od razu kiedy go podepnę do prądu
-- **Drugi:** jakiś losowy biurowy DELL
-
-## Peryferia
-
-- **Klawiatura:** Krux Meteor
-- **Myszka:** Logitech G102
-- **Słuchawki:** SuperLux 330
-
-## Telefon
-
-Telefon mam bardzo fikuśny akurat i bardzo mało popularny. Z racji iż nie ma wejścia słuchawkowego, sprawiłem sobie od razu słuchawki bluetooth.
-
-- **Słuchawki BT:** Awei A780BL
-- **Telefon:** Motorola ThinkPhone
-
-### Historia telefonów
-
-Przed Motorolą chyba **3 lata** aż miałem **Realme 8** i sprawował się naprawdę bardzo dobrze, ale wejście ładowania już miał tak rozklekotane że nie warto było go naprawiać.
-
-Mam jeszcze **Samsung Galaxy A20e**. Aktualnie jest tam wgrany custom rom **LineageOS** i działa to naprawdę sprawnie mimo 32GB pamięci i 3GB ramu.
-
-Z telefonów to jeszcze kilka się znajdzie, ale to już nic ciekawego:
-
-- Realme C35
-- Jakaś stara Motorola
-- Huawei Y3
-- I pewnie coś jeszcze
-
-## Konsole
-
-Konsolki mam dwie. I to ze swojej **ulubionej generacji konsol** czyli **7**.
-
-- **Xbox 360 E**
-- **PlayStation 3 Super Slim**
-
-Szkoda niestety że PlayStation to SuperSlim bo **CFW odpada** i muszę męczyć się z **HENem**. Xbox niestety bez przeróbki, ale i tak gram na nim tylko w **Kinect Sports**.
-
-## Laptopy
-
-Laptopy mam aż **4** i nie korzystam na co dzień z żadnego, chociaż myślałem czy nie postawić na nich jakiegoś **JellyFina + FTP**.
-
-- Jakiś Asus fikuśny co ma 32GB pamięci
-- Kolejny Asus z jakąś i3
-- HP Pavilion G6
-- Asus ExpertBook jakiś tam
-
-## Tablety
-
-Tabletów to mam chyba **5** też z nich nie korzystam, jednego tylko czasem do czytania książek, ale to rzadko.
+Jest to **Fujitsu Siemens Scenic i815e**, jednak nie jestem pewny, czy jest w oryginalnej konfiguracji, czy ma jakieś losowe podzespoły.  
+Nie wiem nawet, czy w ogóle jeszcze działa — dobre 5 lat go nie uruchamiałem.
 
 ---
 
-Sprzętu mam jeszcze sporo, ale nie ma co wymieniać jakichś drukarek, lutownic czy telewizorów
+## Monitory
+
+- **Główny:** Gigabyte GS27QA
+- **Boczny:** Dell P2214H
+
+---
+
+## Peryferia
+
+- **Klawiatura:** Thor 230 (przełączniki Outemu Panda)
+- **Myszka:** Logitech G102
+- **Słuchawki:** SuperLux 330
+
+---
+
+## Telefon
+
+Telefon mam akurat całkiem „fikuśny”, bo jest to **Motorola ThinkPhone**.  
+Jak na razie sprawuje się całkiem dobrze, mimo że musiałem zainstalować jakieś 30–40 aktualizacji w ciągu 3 miesięcy xDDD.  
+Ale na razie ustały, więc jest okej.
+
+---
+
+## Konsole
+
+Jestem dumnym posiadaczem dwóch liderów 7. generacji konsol:
+
+- Xbox 360
+- PlayStation 3 (wersja SuperSlim)
+
+PlayStation niestety w wersji SuperSlim, ale dostałem je za free, więc nie ma co narzekać.

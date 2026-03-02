@@ -1,38 +1,54 @@
 # Czesc, jestem Kacper
 
 Interesuje się **chyba każdą dziedziną technologii**, ale każdą po trochę i żadną na poważnie.
-Myślałem czy nie iść na studia jakieś np. **cyberbezpieczeństwo** lub coś takiego, ale nie wiem czy mi się chce.
+Myślałem czy nie iść na studia jakieś np. jakaś **Administracja systemami IT** lub coś takiego, ale nie wiem czy to dla mnie.
+Nie wiem czy mi się chce. Nic jeszcze nie wiem. Mam **21 lat** nie mam pojęcia co chcę robić w życiu.
 
-### Muzyka i gry
+### Muzyka
 
-Słucham **Polskiego podziemia**. Gram w gierki różne, najwięcej chyba w **Minecrafta** ale tylko na modach.
+Słucham głównie **Polskiego podziemia**. Luuuubię:
 
-Gdybym miał wymienić **TOP 3** swoje gry ulubione to:
+- **Youngestalan**
+- **Livles**
+- **Nagao**
+- **bligewater**
+- **Hubithekid**
+- **Ksiaze700**
 
-- Minecraft
-- Cyberpunk
-- Fortnite
+I wszystko inne co idzie w tą stronę. Z mainstreamu słucham tylko **Quebonafide** i **Paktofonika/Pokahontaz.**
 
 ### Seriale i anime
 
-Lubię:
+Bardzo rzadko coś oglądam. Nie mam pojęcia jak ludzie znajdują na co dzień czas na oglądanie seriali, filmów lub kreskówek.
+Ale jeśli już muszę wymienić swoje ulubione to będzie tak:
 
-- **Neon Genesis Evangelion**
+- **Harry Potter**
 - **Breaking Bad**
-- **Initial D** - też było spoko
-- **Rick i Morty** - lubię, ale denerwują mnie ludzie co się uważają za mądrzejszych jak to oglądają, to mega cringowe
+- **Neon Genesis Evangelion**
+- **Initial D**
+- **Breaking Bad**
+- **Scooby Doo**
+- **Rick i Morty**
+- **Garfield Show**
+- **Spongebob**
 
-Mało rzeczy w sumie oglądam.
+Ale jak już wspominałem bardzo rzadko coś oglądam. Więc nie mam jakichś swoich ulbionych gatunków.
+
+## Gry
+
+Kocham Minecrafta ale da się grać w niego tylko i wyłącznie na modach bo sama Vanilla jest meeeega nudna. Uwielbiam też Cyberpunka i śmiało powiedziałbym że to najlepsza gra w jaką kiedykolwiek grałem. Lubię też Fortnite raz do roku mam jakąś mega fazę i gram miesiąc bez przerwy.
 
 ### Jedzenie
 
-Uwielbiam:
+Tutaj również nic wyjątkowego. Nie przyrządzam i nie kupuje sobie jakiegoś fancy jedzenia. Ale bardzo lubię:
 
 - **Ostre jedzenie**
 - **Oranżadę Hellenę**
-- **Wszelkiego rodzaju makaron** - nie ma nic lepszego niż makaron
+- **Wszelkiego rodzaju makaron**
+- **LECZO** KOCHAM LECZO
+- **Piwo**
 
-W sumie to lubię gotować całkiem. Jestem fanatykiem **LECZO**.
+Jestem fanatykiem Leczo
 
 ---
 
