@@ -7,5 +7,5 @@ projekt_link="https://github.com/BurnoutBB/FrutigerHardwareMonitor"
 <projekt
 projekt_tytul="Plandok"
 projekt_opis="Aplikacja do sprawnego przeglądani treści z mapki w formacie PDF"
-projekt_link="https://burnoutbb.github.io/BurnoutBB/"
+projekt_link="https://github.com/BurnoutBB/PlanDok"
 >
